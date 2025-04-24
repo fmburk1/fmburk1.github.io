@@ -1,0 +1,35 @@
+/* SidebarLayout.css */
+
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+}

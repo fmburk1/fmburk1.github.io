@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
+import SidebarLayout from "./sidebar/Sidebar.jsx";
+import Education from "./components/Education.jsx";
+import Work from "./components/Work.jsx";
+import Profile from "./components/Profile.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activeTab, setActiveTab] = useState("home");
+
+  const renderContent = () => {
+    switch (activeTab) {
+      case "Profile":
+        return <Profile />;
+      case "Education":
+        return <Education />;
+      default:
+        return <Work />;
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={{ display: "flex", height: "100vh", margin: 0, padding: 0 }}>
+      <SidebarLayout activeTab={activeTab} setActiveTab={setActiveTab} />
+      <main
+        style={{
+          marginLeft: "25vw",
+          width: "75vw",
+          padding: "1rem",
+          boxSizing: "border-box",
+        }}
+      >
+        {renderContent()}
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
