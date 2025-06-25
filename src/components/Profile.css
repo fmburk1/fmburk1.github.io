@@ -1,0 +1,29 @@
+.profile {
+  position: relative;
+  height: 100vh;
+  background-size: 400% 400%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.profile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/stuttgart.jpg"); /* adjust path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* 👈 lower for more subtlety */
+  z-index: 0;
+}
+
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  z-index: 1;
+}

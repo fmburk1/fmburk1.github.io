@@ -1,31 +1,81 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SidebarLayout.css";
+import ProfileImage from "../assets/Profile.jpg";
+import USFlag from "../assets/America.png";
+import GermanFlag from "../assets/Germany.png";
+import { useTranslation } from "react-i18next";
+import "../i18n";
+import campanile from "../assets/campanile.png";
 
-export default function SidebarLayout({ activeTab, setActiveTab }) {
+export default function SidebarLayout({
+  scrollToSection,
+  setSidebarOpen,
+  activeSection,
+  isOpen,
+}) {
+  const { t, i18n } = useTranslation();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setDropdownOpen(false);
+  };
+
+  const handleTabClick = (tab) => {
+    scrollToSection(tab);
+  };
+
   return (
-    <div className="container">
-      <aside className="sidebar">
-        <ul>
+    <aside
+      className={`sidebar ${isOpen ? "open" : "closed"}`}
+      style={{
+        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(${campanile})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="language-dropdown">
+        <button
+          className="language-toggle"
+          onClick={() => setDropdownOpen(!dropdownOpen)}
+        >
+          {i18n.language === "en" ? (
+            <>
+              <img src={USFlag} alt="English" /> English
+            </>
+          ) : (
+            <>
+              <img src={GermanFlag} alt="Deutsch" /> Deutsch
+            </>
+          )}
+        </button>
+        {dropdownOpen && (
+          <div className="language-menu">
+            <div onClick={() => changeLanguage("en")}>
+              <img src={USFlag} alt="English" /> English
+            </div>
+            <div onClick={() => changeLanguage("de")}>
+              <img src={GermanFlag} alt="Deutsch" /> Deutsch
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="sidebar-spacer" />
+
+      <img src={ProfileImage} alt="Profile" className="profile-photo" />
+
+      <ul>
+        {["Home", "Profile", "Education", "Work"].map((tab) => (
           <li
-            className={activeTab === "Profile" ? "active" : ""}
-            onClick={() => setActiveTab("Profile")}
+            key={tab}
+            onClick={() => handleTabClick(tab)}
+            className={activeSection === tab ? "active" : ""}
           >
-            Profile
+            {t(`sidebar.${tab.toLowerCase()}`)}
           </li>
-          <li
-            className={activeTab === "Education" ? "active" : ""}
-            onClick={() => setActiveTab("Education")}
-          >
-            Education
-          </li>
-          <li
-            className={activeTab === "Work" ? "active" : ""}
-            onClick={() => setActiveTab("Work")}
-          >
-            Work Experience
-          </li>
-        </ul>
-      </aside>
-    </div>
+        ))}
+      </ul>
+    </aside>
   );
 }

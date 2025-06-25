@@ -1,35 +1,125 @@
-/* SidebarLayout.css */
-
-.container {
-  display: flex;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+/* Sidebar Layout */
 
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
   width: 25vw;
+  min-width: 15rem;
   height: 100vh;
-  background-color: #f4f4f4;
   border-right: 1px solid #ddd;
   box-sizing: border-box;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out 0.1s, opacity 0.4s ease-in-out 0.1s;
+  opacity: 0;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: inline-block;
+}
+
+.language-toggle {
+  background-color: #ffffffaa;
+  border: 1px dotted black;
+  padding: 0.4rem 0.8rem;
+  width: 8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.language-toggle img,
+.language-menu img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 8rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  z-index: 10;
+  min-width: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-menu div {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.language-menu div:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.sidebar-spacer {
+  flex-shrink: 0;
+  min-height: 5rem;
+}
+
+.profile-photo {
+  width: min(150px, 40%);
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: clamp(1rem, 4vh, 2rem);
+  border: 3px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 100%;
+  max-width: 12rem;
 }
 
 .sidebar li {
-  padding: 0.5rem 0;
+  margin: clamp(0.5rem, 1.5vh, 1.2rem) 0;
+  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  transition: color 0.2s ease, border-left 0.2s ease;
   cursor: pointer;
 }
 
 .sidebar li.active {
-  font-weight: bold;
+  font-weight: 700;
+  color: #2a5298;
+  border-left: 4px solid #2a5298;
+  padding-left: 0.75rem;
 }
