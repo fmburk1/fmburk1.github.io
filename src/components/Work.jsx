@@ -1,5 +1,6 @@
 import React from "react";
+import "./Work.css";
 
 export default function Work({ setActiveSection }) {
-  return <div>This is the Work section.</div>;
+  return <div className="work">This is the Work section.</div>;
 }

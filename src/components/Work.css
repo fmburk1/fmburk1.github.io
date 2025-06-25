@@ -1,0 +1,20 @@
+.work {
+  position: relative;
+  height: 100vh;
+  background-size: 400% 400%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.work::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../assets/munich.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* 👈 lower for more subtlety */
+  z-index: 0;
+}
