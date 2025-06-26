@@ -1,0 +1,70 @@
+{
+  "app": { "resume": "Résumé herunterladen" },
+  "sidebar": {
+    "profile": "Profil",
+    "work": "Berufserfahrung",
+    "education": "Bildung",
+    "home": "Home"
+  },
+  "home": {
+    "heading": "Hey, Ich bin Friedrich",
+    "word1": "Data Scientist 📊🧠",
+    "word2": "Sports Fan ⚽🏀",
+    "word3": "Lebenslanger Lerner 📚🚀",
+    "word4": "International <span class='emoji'>🇩🇪</span><span class='emoji'>🇺🇸</span><span class='emoji'>🇨🇭</span>",
+    "body": "Daten- und Finanzenthusiast, der gerne tüftelt und unorthodoxe Lösungen findet.",
+    "label": "Lernen Sie mich kennen"
+  },
+  "profile": {
+    "body1": "Ich bin ein 23-jähriger Internationaler, der Data Science an der University of California, Berkeley, studierte und Arbeitserfahrung in den Bereichen Finanzen und automotive hat. Es macht mir Spaß, Daten zu analysieren, um wirkungsvolle Entscheidungen zu treffen. ",
+    "body2": "Da ich in Tennessee, Kalifornien und Süddeutschland (Stuttgart und München) gelebt habe, glaube ich, dass ich ein anpassungsfähiger und extrovertierter Mensch bin. Wenn Sie mich kennenlernen möchten, schicken Sie mir eine E-Mail an oder schreiben Sie mir auf LinkedIn! :)",
+    "interest1": "Fussball",
+    "interest2": "Jagd",
+    "interest3": "Geschichte",
+    "interest4": "Schach",
+    "interest5": "Fitness",
+    "interest6": "ESport",
+    "interest7": "Finanzen",
+    "language1": "Englisch (Muttersprache)",
+    "language2": "Deutsch (Muttersprache)",
+    "language3": "Spanish (Anfänger/Mittelstufe)",
+    "nationality1": "Amerikanisch",
+    "nationality2": "Deutsch",
+    "nationality3": "Schweiz",
+    "Bezeichnung1": "Sozial",
+    "label2": "Detailorientiert",
+    "label3": "Teamfähig",
+    "label4": "Aufgeschlossen",
+    "label5": "VfB-Fan"
+  },
+  "work": {
+    "time": "aktuell",
+    "role1": "Mitgründer",
+    "role2": "Analyst",
+    "role3": "Analytics\nPraktikant",
+    "body1": "Ich habe smartmieter mit einem Freund in München gegründet, nachdem wir beide Erfahrungen mit Mietproblemen gemacht hatten. Wir wollten die Mietberatung so einfach und zugänglich wie möglich machen und sicherstellen, dass Mieter nicht ausgebeutet werden - und die Rechte erhalten, die ihnen zustehen.",
+    "body2": "Ich war Teil der ‚Analytics Journey‘ bei Deloitte, einem Rotationsprogramm, das alle 5 Geschäftsbereiche von Deloitte umfasst. Mein Heimatbereich war Financial Advisory - Business & Transaction Services.",
+    "body3": "Ich habe StylisAI zusammen mit einem Freund aus der Universität gegründet. Unser Ziel war es, deinen Kleiderschrank zu digitalisieren und dir mithilfe von KI Zugang zu einem persönlichen Stylisten auf deinem Telefon zu ermöglichen.",
+    "body4": "Ich habe bei Porsche Digital in Atlanta als Praktikant im Bereich Analytik gearbeitet. Ich habe Google Analytics, Python und andere Kenntnisse genutzt, um Einblicke in das Kundenverhalten auf PDI-Plattformen zu gewinnen.",
+    "time4": "Summer 2022",
+    "expanded1": "Ich habe smartmieter mit einem Freund in München gegründet, nachdem wir beide Erfahrungen mit Mietproblemen gemacht hatten. Wir wollten die Mietberatung so einfach und zugänglich wie möglich machen und sicherstellen, dass Mieter nicht ausgebeutet werden - und die Rechte erhalten, die ihnen zustehen. Wir haben smartmieter als UG in München gegründet und ermöglichen es Kunden, Mietverträge und Nebenkostenabrechnungen hochzuladen, auf Rechtmäßigkeit zu prüfen sowie eine Erstberatung über KI zu ihrer Mietsituation oder ihren Problemen zu erhalten. Smartmieter übernimmt dann stellvertretend für den Mieter die Kommunikation mit dem Vermieter und ist bestrebt, die Ziele des Mieters zu erfüllen (sei es die Lösung des Problems im Mietverhältnis oder eine Mietminderung bis zur Lösung des Problems). Wir haben dies über die OpenAI API, react, jsx, neben anderen Funktionalitäten über github. Versuchen Sie die Seite:",
+    "example1": "Business Plannung",
+    "example2": "und vieles mehr...",
+    "expanded2": "Ich habe an der ‚Analytics Journey‘ bei Deloitte teilgenommen, einem Rotationsprogramm, das alle 5 Geschäftsbereiche von Deloitte umfasst. Mein Heimatbereich war Financial Advisory - Business & Transaction Services. Während meiner Zeit habe ich an verschiedenen Projekten gearbeitet, die sich hauptsächlich um KI-Implementierungen drehten. Ein Beispiel war eine Anonymisierungsfunktion unter Verwendung lokaler KI, die es uns ermöglichte, sensible Daten zu verarbeiten und gleichzeitig die Vertraulichkeit der Kundendaten zu wahren. Ich habe auch an Netzwerk- und Programminitiativen teilgenommen, wie einem Deloitte-Hackathon, bei dem mein Team 'Best Business Pitch' gewann.",
+    "example3": "Git funktionen",
+    "expanded3": "Ich habe StylisAI/Finish my Fit mit einem Freund aus der Universität gegründet. Unser Ziel war es, den Kleiderschrank zu digitalisieren und unseren Kunden mithilfe von KI Zugang zu einem persönlichen Stylisten auf ihrem Telefon zu ermöglichen. Wir implementierten die OpenAI API, programmierten in React, HTML und Python und lernten eine Menge über VC, Pitching, Business Proposals, unter anderem.",
+    "expanded4": "Ich habe als Analytik-Praktikant bei Porsche Digital in Atlanta gearbeitet. Ich habe Google Analytics, Python und andere Kenntnisse genutzt, um Einblicke in das Kundenverhalten auf PDI-Plattformen zu gewinnen. Bei einer Gelegenheit bereinigte ich eine Datenbank von Chatlogs mit einem Support-Bot, der Porsche-Kunden bei ihren Fahrzeugen helfen sollte, und identifizierte häufige Probleme, mit denen Kunden konfrontiert waren, sowie die Bereiche, in denen der Bot erfolgreich war oder versagte. Daraufhin habe ich Wege zur Verbesserung des Bots aufgezeigt und einen Einblick gegeben, ob es sich lohnt, den Vertrag mit dem Support-Bot-Unternehmen aufrechtzuerhalten.",
+    "zeugnis": "Zeugnis herunterladen"
+  },
+  "education": {
+    "title1": "Aktivitäten",
+    "body1": "Ich meldete mich freiwillig als Kursmitarbeiter für Data 8, den wichtigsten Einführungskurs in Datenwissenschaft in Berkeley, wo ich bei der Leitung eines Labors half und Studenten bei ihren wöchentlichen Laboraufgaben unterstützte. Nur einige wenige Studenten wurden als mitarbeiter ausgewählt, und fast 1.500 Studenten belegen den Kurs jedes Semester. Ich half dabei, den Studenten Statistik, Datenanalyse und Visualisierung beizubringen.",
+    "body2": "Darüber hinaus war ich ehrenamtlich als CSM (Computer Science Mentors) Tutor für CS88 tätig, wo ich wöchentlich eine 1,5-stündige Studiensitzung abhielt, in der ich die im Unterricht behandelten Themen unterrichtete und vertiefte, um den Studenten bei ihren Aufgaben zu helfen.",
+    "body3": "Ich habe Data Science an der University of California, Berkeley, studiert, mit einem Schwerpunkt auf Geschäfts- und Industrieanalytik. Während meiner Zeit dort habe ich mich auf maschinelles Lernen, Datenvisualisierung und statistische Analysen konzentriert.",
+    "body4": "Ich erreichte einen Notendurchschnitt von 1,6 (3.4 GPA) und engagierte mich in verschiedenen außerschulischen Aktivitäten, wie z. B. in der Studentenvertretung, bei discoveryprojects, als Kursleiter und vieles mehr.",
+    "title2": "Weiteren Aktivitäten",
+    "body5": "Ich war gewähltes Mitglied der RHA (Residence Hall Assembly), in der ich die Studenten vertrat, die in den Wohnheimen von Berkeley leben. Hier habe ich über Haushaltsausgaben in Höhe von über 100.000 Dollar beraten und abgestimmt.",
+    "title3": "Data Discovery Projekt",
+    "body6": "Ich habe mit Zulu Forest Sciences (jetzt bekannt als Zulu Ecosystems) an einem Datenerfassungsprojekt gearbeitet, bei dem wir Land auf der Grundlage seines Kohlenstoffbindungspotenzials und seines Solarpotenzials klassifizieren und analysieren wollten. Das Team verwendete eine Vielzahl von Tools, wobei ich mich hauptsächlich auf die Python-Programmierung konzentrierte."
+  }
+}
