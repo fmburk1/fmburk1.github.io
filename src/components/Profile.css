@@ -12,18 +12,232 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../assets/stuttgart.jpg"); /* adjust path */
+  background-image: url("../assets/stuttgart.jpg");
   background-size: cover;
   background-position: center;
-  opacity: 0.1; /* 👈 lower for more subtlety */
+  opacity: 0.1;
   z-index: 0;
 }
+.profile-section {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 0 1rem;
+}
 
-.card-row {
+.profile-grid {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) 1fr minmax(160px, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  z-index: 1;
+}
+
+/* Left + Right Sidebars */
+.profile-skills,
+.profile-extras {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ vertical centering */
+  padding: 1.5rem 1rem;
+  width: "90%";
+}
+
+/* CENTER  */
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ─ small-screen: stack everything ─ */
+@media (max-width: 900px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+  .profile-skills,
+  .profile-extras {
+    height: auto;
+  }
+}
+
+.profile-image-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-me-box {
+  max-width: 600px;
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+}
+.profile-bullets {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  max-width: 100%;
+  scroll-behavior: smooth;
+}
+.profile-bullet {
+  position: relative;
+  background: #2a5298;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 10%;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+
+  /* Centering */
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-bullet:hover {
+  transform: scale(1.07);
+}
+
+/* Optional image inside bullet */
+.trait-image {
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.profile-bullet:hover .trait-image {
+  opacity: 1;
+}
+
+.about-me-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.about-button:hover {
+  color: #2a5298;
+}
+
+.about-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.skills-box {
+  padding: 1rem; /* More breathing room */
+  background: white;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Space between child elements */
+}
+
+/* Optional: hide scrollbars until needed */
+.skills-box::-webkit-scrollbar {
+  width: 6px;
+}
+.skills-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+.skills-box::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.skills-heading {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  color: #111;
+}
+
+/* Badge container */
+.skill-badges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
-  z-index: 1;
+  justify-content: center; /* ✅ center badges */
+  gap: 0.75rem;
+}
+
+/* Individual badge styling */
+.skill-badge {
+  background: #ffffff;
+  color: #2a5298;
+  padding: 0.55rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  max-width: 80%;
+  cursor: pointer;
+  border: 1px solid #2a5298;
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skill-badge:hover {
+  background: #2a5298;
+  color: white;
+  transform: translateY(-2px);
 }

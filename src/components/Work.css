@@ -1,20 +1,183 @@
-.work {
+/* SECTION background (unchanged) */
+.work-section {
   position: relative;
   height: 100vh;
-  background-size: 400% 400%;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  color: #fff;
 }
-.work::before {
+.work-section::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../assets/munich.jpg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.1; /* 👈 lower for more subtlety */
+  background: url("../assets/munich.jpg") center/cover no-repeat;
+  opacity: 0.1;
   z-index: 0;
+}
+
+/* CARDS grid / row */
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 1;
+}
+
+/* ─── Overlay when expanded ───────────────────── */
+.card-overlay {
+  position: absolute;
+  top: 7.5rem;
+  bottom: 7.5rem;
+  left: 20rem;
+  right: 20rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 2.5rem 3rem;
+  overflow: auto;
+  z-index: 10;
+  animation: fadeIn 0.3s ease;
+  color: #111;
+}
+.overlay-logo {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* back button */
+.back-button {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #2a5298;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* overlay text */
+.overlay-title {
+  margin-top: 3rem;
+  color: #2a5298;
+}
+.overlay-content {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* MOBILE – stack cards and overlay covers full width */
+@media (max-width: 900px) {
+  .work-section {
+    align-items: flex-start;
+    padding-top: 4rem;
+  }
+  .card-row {
+    justify-content: center;
+  }
+  .card-overlay {
+    top: 2rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 2rem;
+  }
+}
+.overlay-link-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+.overlay-link {
+  color: #2a5298;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.overlay-link:hover {
+  color: #1d4ed8;
+}
+.overlay-link-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.overlay-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.overlay-tag {
+  background: #2a5298;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.overlay-photo {
+  max-width: 100%;
+  height: 40rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.overlay-video-wrapper,
+.overlay-photo-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.overlay-video {
+  max-width: 100%;
+  max-height: 400px;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.overlay-download-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.overlay-download {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2a5298;
+  background-color: #f1f5ff;
+  border: 1px solid #2a5298;
+  border-radius: 9999px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.overlay-download:hover {
+  background-color: #2a5298;
+  color: white;
 }

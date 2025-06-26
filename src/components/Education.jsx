@@ -1,6 +1,43 @@
 import React from "react";
 import "./Education.css";
+import gradPhoto from "../assets/graduation.jpg";
+import project1Image from "../assets/zulu.jpg";
+import project2Image from "../assets/ucberkeley.jpg";
+import { useTranslation } from "react-i18next";
 
-export default function Education({ setActiveSection }) {
-  return <div className="education">This is the Education section. </div>;
+export default function Education() {
+  const { t } = useTranslation();
+  return (
+    <div className="education">
+      <div className="education-grid">
+        <aside className="edu-project">
+          <img src={project2Image} alt="Project 2" className="project-image" />
+          <h3>{t("education.title1")}</h3>
+          <p>{t("education.body1")}</p>
+          <p>{t("education.body2")}</p>
+        </aside>
+        {/* Left: Project 1 */}
+
+        {/* Center: Graduation and Overview */}
+        <main className="edu-main">
+          <div className="grad-image-wrapper">
+            <img src={gradPhoto} alt="Graduation" className="grad-image" />
+          </div>
+          <div className="edu-about-box">
+            <p>{t("education.body3")}</p>
+            <p>{t("education.body4")}</p>
+          </div>
+        </main>
+        <aside className="edu-project">
+          <h3>{t("education.title2")}</h3>
+          <p>{t("education.body5")}</p>
+          <img src={project1Image} alt="Project 1" className="project-image" />
+          <h3>{t("education.title3")}</h3>
+          <p>{t("education.body6")}</p>
+        </aside>
+
+        {/* Right: Project 2 */}
+      </div>
+    </div>
+  );
 }

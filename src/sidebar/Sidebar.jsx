@@ -66,7 +66,7 @@ export default function SidebarLayout({
       <img src={ProfileImage} alt="Profile" className="profile-photo" />
 
       <ul>
-        {["Home", "Profile", "Education", "Work"].map((tab) => (
+        {["Home", "Profile", "Work", "Education"].map((tab) => (
           <li
             key={tab}
             onClick={() => handleTabClick(tab)}

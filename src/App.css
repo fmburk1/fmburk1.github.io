@@ -63,7 +63,7 @@ html {
 
 /* When sidebar is open, show at top-right corner of the sidebar */
 .hamburger-button.open {
-  left: max(12rem, calc(25vw - 3.5rem)); /* Adjust based on sidebar width */
+  left: max(9.1rem, calc(15vw - 3.5rem)); /* Adjust based on sidebar width */
   color: gray;
 }
 
@@ -77,8 +77,9 @@ html {
 }
 
 .main-content.sidebar-open {
-  width: 75vw;
-  margin-left: 25vw;
+  width: 85vw;
+  min-width: 85vw;
+  margin-left: 15vw;
 }
 
 .main-content.sidebar-closed {
@@ -109,4 +110,24 @@ html {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.top-right-resume-button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #2a5298;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: background 0.2s ease;
+}
+
+.top-right-resume-button:hover {
+  background: #4f46e5;
 }

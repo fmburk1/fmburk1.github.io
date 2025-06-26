@@ -6,8 +6,9 @@ import Work from "./components/Work";
 import Profile from "./components/Profile";
 import Home from "./components/Home";
 import "./i18n";
-
+import { useTranslation } from "react-i18next";
 function App() {
+  const { t } = useTranslation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
 
@@ -57,6 +58,13 @@ function App() {
       >
         {sidebarOpen ? "✖" : "☰"}
       </button>
+      <a
+        href="/assets/Your_Resume.pdf"
+        download
+        className="top-right-resume-button"
+      >
+        {t("app.resume")}
+      </a>
 
       <SidebarLayout
         scrollToSection={scrollToSection}
@@ -91,18 +99,18 @@ function App() {
             <Profile setActiveSection={setActiveSection} />
           </section>
           <section
-            ref={educationRef}
-            className="section"
-            style={{ scrollSnapAlign: "start" }}
-          >
-            <Education setActiveSection={setActiveSection} />
-          </section>
-          <section
             ref={workRef}
             className="section"
             style={{ scrollSnapAlign: "start" }}
           >
             <Work setActiveSection={setActiveSection} />
+          </section>
+          <section
+            ref={educationRef}
+            className="section"
+            style={{ scrollSnapAlign: "start" }}
+          >
+            <Education setActiveSection={setActiveSection} />
           </section>
         </main>
       </div>
