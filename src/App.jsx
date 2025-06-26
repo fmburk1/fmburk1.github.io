@@ -5,10 +5,14 @@ import Education from "./components/Education";
 import Work from "./components/Work";
 import Profile from "./components/Profile";
 import Home from "./components/Home";
-import "./i18n";
+import i18n from "./i18n";
 import { useTranslation } from "react-i18next";
+import englishResume from "./assets/JuneResume.pdf";
+import germanResume from "./assets/JuniLebenslauf.pdf";
+
 function App() {
   const { t } = useTranslation();
+  const currentLang = i18n.language;
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
 
@@ -59,7 +63,7 @@ function App() {
         {sidebarOpen ? "✖" : "☰"}
       </button>
       <a
-        href="/assets/Your_Resume.pdf"
+        href={currentLang === "de" ? germanResume : englishResume}
         download
         className="top-right-resume-button"
       >
