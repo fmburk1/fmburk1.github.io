@@ -54,7 +54,9 @@
     "example3": "Git functions",
     "expanded3": "I founded StylisAI/Finish my Fit with a University friend. We aimed to digitize the closet, and allow our customers to have access to a personal stylist on your phone using AI. We implemented OpenAI API, programmed in react, html, and python, and learned a lot about VC, pitching, business propositions, amongst other things.",
     "expanded4": "I worked as an analytics intern at Porsche Digital in Atlanta. I utilized Google Analytics, Python, and other skills to help gain insights into consumer behavior on PDI platforms. On one occasion, I cleaned up a database of chatlogs with a support bot, aiming to assist Porsche customers with their vehicles.I identified common issues that customers were facing, and in what areas the bot was succeeding or failing. As a result, I identified ways to improve the bot, and gave insight on whether or not it was worth maintaining the contract with the support bot company.",
-    "zeugnis": "Download Exit Review"
+    "zeugnis": "Download Exit Review",
+    "back": "Back",
+    "more": "Read more"
   },
   "education": {
     "title1": "Extra-curriculars",

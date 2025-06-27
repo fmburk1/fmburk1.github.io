@@ -94,7 +94,7 @@ export default function Work() {
       {expanded ? (
         <div className="card-overlay">
           <button className="back-button" onClick={() => setExpanded(null)}>
-            ← Back
+            ← {t("work.back")}
           </button>
 
           {expanded.logo && (

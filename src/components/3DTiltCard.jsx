@@ -122,7 +122,7 @@ export default function ThreeDTiltCard({
             });
           }}
         >
-          Read More →
+          {t("work.more")} →
         </button>
       </div>
     </div>
