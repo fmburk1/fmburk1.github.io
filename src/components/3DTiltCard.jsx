@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./3DTiltCard.css";
+import { useTranslation } from "react-i18next";
 
 export default function ThreeDTiltCard({
   title = "3D Tilt Card",
@@ -16,6 +17,7 @@ export default function ThreeDTiltCard({
   pdf,
   onExpand, // ⬅️ callback prop from parent
 }) {
+  const { t } = useTranslation();
   const cardRef = useRef(null);
 
   /* ─── Tilt effect ───────────────────────────── */

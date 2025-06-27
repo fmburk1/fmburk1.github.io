@@ -129,5 +129,6 @@ html {
 }
 
 .top-right-resume-button:hover {
-  background: #4f46e5;
+  background: white;
+  color: #2a5298;
 }
