@@ -54,7 +54,9 @@
     "example3": "Git funktionen",
     "expanded3": "Ich habe StylisAI/Finish my Fit mit einem Freund aus der Universität gegründet. Unser Ziel war es, den Kleiderschrank zu digitalisieren und unseren Kunden mithilfe von KI Zugang zu einem persönlichen Stylisten auf ihrem Telefon zu ermöglichen. Wir implementierten die OpenAI API, programmierten in React, HTML und Python und lernten eine Menge über VC, Pitching, Business Proposals, unter anderem.",
     "expanded4": "Ich habe als Analytik-Praktikant bei Porsche Digital in Atlanta gearbeitet. Ich habe Google Analytics, Python und andere Kenntnisse genutzt, um Einblicke in das Kundenverhalten auf PDI-Plattformen zu gewinnen. Bei einer Gelegenheit bereinigte ich eine Datenbank von Chatlogs mit einem Support-Bot, der Porsche-Kunden bei ihren Fahrzeugen helfen sollte, und identifizierte häufige Probleme, mit denen Kunden konfrontiert waren, sowie die Bereiche, in denen der Bot erfolgreich war oder versagte. Daraufhin habe ich Wege zur Verbesserung des Bots aufgezeigt und einen Einblick gegeben, ob es sich lohnt, den Vertrag mit dem Support-Bot-Unternehmen aufrechtzuerhalten.",
-    "zeugnis": "Zeugnis herunterladen"
+    "zeugnis": "Zeugnis herunterladen",
+    "back": "Zurück",
+    "more": "Mehr erfahren"
   },
   "education": {
     "title1": "Aktivitäten",
