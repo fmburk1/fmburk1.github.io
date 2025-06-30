@@ -1,5 +1,4 @@
 import React from "react";
-import ThreeDTiltCard from "./3DTiltCard";
 import "./Profile.css";
 import maxProfile from "../assets/maxprofile.jpg";
 import emailIcon from "../assets/email.jpg";

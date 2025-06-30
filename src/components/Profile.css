@@ -1,12 +1,14 @@
 .profile {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-size: 400% 400%;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .profile::before {
   content: "";
@@ -41,7 +43,8 @@
 /* Left + Right Sidebars */
 .profile-skills,
 .profile-extras {
-  height: 80vh;
+  min-height: 80%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center; /* ✅ vertical centering */
@@ -63,10 +66,13 @@
 /* ─ small-screen: stack everything ─ */
 @media (max-width: 900px) {
   .profile-grid {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   .profile-skills,
   .profile-extras {
+    min-height: auto;
     height: auto;
   }
 }
