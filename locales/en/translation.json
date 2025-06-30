@@ -18,6 +18,8 @@
   "profile": {
     "body1": "I'm a 23-year-old international who studied Data Science at the University of California, Berkeley, with experience in both the finance and automotive industries. I enjoy working with data to drive meaningful decisions.",
     "body2": "Having lived in Tennessee, California, and southern Germany (Stuttgart & Munich), I’ve grown into an adaptable and outgoing person. If you'd like to connect, feel free to send me an email or reach out on LinkedIn!",
+    "title1": "Technical Skills",
+    "title2": "Interests",
     "interest1": "Soccer",
     "interest2": "Hunting",
     "interest3": "History",
@@ -25,9 +27,11 @@
     "interest5": "Fitness",
     "interest6": "ESports",
     "interest7": "Finance",
+    "title3": "Languages",
     "language1": "English (Native)",
     "language2": "German (Native)",
     "language3": "Spanish (Beginner/Intermediate)",
+    "title4": "Nationalities",
     "nationality1": "American",
     "nationality2": "German",
     "nationality3": "Swiss",
@@ -35,7 +39,10 @@
     "label2": "Detail-Oriented",
     "label3": "Team Player",
     "label4": "Open Minded",
-    "label5": "VfB Fan"
+    "label5": "VfB Fan",
+    "title5": "Potentially Relevant Things",
+    "interesting1": "36 ACT Score (Perfect)",
+    "interesting2": "Pursuing CFA Level 1 Certification"
   },
   "work": {
     "time": "current",
@@ -69,7 +76,7 @@
     "title2": "Further Extra-curriculars",
     "subtitle3": "RHA Representative",
     "body5": "As an elected member of the Residence Hall Assembly (RHA), I represented students living in Berkeley’s residence halls. I worked on initiatives to improve student life and voted on over $100,000 in budgetary decisions across the school year.",
-    "title3": "Data Discovery Project",
+    "subtitle4": "Data Discovery Project",
     "body6": "I joined a data discovery project with Zulu Forest Sciences (now Zulu Ecosystems), where we explored how land could be classified based on carbon sequestration and solar energy potential. My main role involved Python programming and data analysis, working with geospatial and environmental datasets."
   }
 }

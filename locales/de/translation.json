@@ -13,11 +13,13 @@
     "word3": "Lebenslanger Lerner 📚🚀",
     "word4": "International <span class='emoji'>🇩🇪</span><span class='emoji'>🇺🇸</span><span class='emoji'>🇨🇭</span>",
     "body": "Daten- und Finanzenthusiast, der gerne tüftelt und unorthodoxe Lösungen findet.",
-    "label": "Lernen Sie mich kennen"
+    "label": "Mehr über mich erfahren"
   },
   "profile": {
     "body1": "Ich bin 23 Jahre alt, international aufgewachsen und habe Data Science an der University of California, Berkeley studiert. Berufliche Erfahrung habe ich in der Finanz- und Automobilbranche gesammelt. Besonders gerne nutze ich Datenanalysen, um fundierte und wirkungsvolle Entscheidungen zu unterstützen.",
     "body2": "Ich habe in Tennessee, Kalifornien und Süddeutschland (Stuttgart & München) gelebt und bin dadurch offen, anpassungsfähig und kontaktfreudig geworden. Wenn du Lust hast, mich kennenzulernen, schreib mir gerne eine E-Mail oder kontaktiere mich über LinkedIn!",
+    "title1": "Technische Stärken",
+    "title2": "Interessen",
     "interest1": "Fussball",
     "interest2": "Jagd",
     "interest3": "Geschichte",
@@ -25,17 +27,22 @@
     "interest5": "Fitness",
     "interest6": "ESport",
     "interest7": "Finanzen",
+    "title3": "Sprachen",
     "language1": "Englisch (Muttersprache)",
     "language2": "Deutsch (Muttersprache)",
     "language3": "Spanish (Anfänger/Mittelstufe)",
+    "title4": "Nationalitäten",
     "nationality1": "Amerikanisch",
     "nationality2": "Deutsch",
-    "nationality3": "Schweiz",
-    "Bezeichnung1": "Sozial",
+    "nationality3": "Schweizerisch",
+    "label1": "Sozial",
     "label2": "Detailorientiert",
     "label3": "Teamfähig",
     "label4": "Aufgeschlossen",
-    "label5": "VfB-Fan"
+    "label5": "VfB-Fan",
+    "title5": "Möglischt Relevante Sachen",
+    "interesting1": "36 ACT Ergebniss (Perfekt)",
+    "interesting2": "Strebe derzeit die CFA Level 1 Zertifizierung an"
   },
   "work": {
     "time": "aktuell",
@@ -59,7 +66,7 @@
     "more": "Mehr erfahren"
   },
   "education": {
-    "title1": "Außeruniversitäre Aktivitäten",
+    "title1": "Ehrenamtliche Aktivitäten",
     "subtitle1": "Kursbetreuung für Data 8",
     "body1": "Ich habe ehrenamtlich als Kursbetreuer für Data 8 gearbeitet, den einführenden Data-Science-Kurs an der UC Berkeley. Pro Semester nehmen rund 1.500 Studierende teil, und nur wenige werden für diese Rolle ausgewählt. Ich half dabei, wöchentliche Labore durchzuführen, unterstützte Studierende bei ihren Aufgaben und vermittelte Konzepte in Statistik, Datenanalyse und Visualisierung.",
     "subtitle2": "CSM-Tutor",
@@ -69,7 +76,7 @@
     "title2": "Weitere Aktivitäten",
     "subtitle3": "RHA-Vertreter",
     "body5": "Als gewähltes Mitglied der Residence Hall Assembly (RHA) vertrat ich die Interessen der Studierenden in den Wohnheimen von Berkeley. Ich war an der Diskussion und Abstimmung über ein Budget von über 100.000 Dollar beteiligt und arbeitete an Projekten zur Verbesserung des Wohnumfelds.",
-    "title3": "Data Discovery Project",
+    "subtitle4": "Data Discovery Project",
     "body6": "Ich war Teil eines Data Discovery Projekts bei Zulu Forest Sciences (heute Zulu Ecosystems), in dem wir untersuchten, wie Landflächen anhand ihres Potenzials zur Kohlenstoffbindung und Solarenergienutzung klassifiziert werden können. Mein Beitrag bestand vor allem in der Programmierung mit Python und der Analyse von Geo- und Umweltdaten."
   }
 }
