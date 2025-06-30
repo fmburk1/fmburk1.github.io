@@ -10,6 +10,7 @@ export default function Education() {
   return (
     <div className="education">
       <div className="education-grid">
+        {/* ─── Left Sidebar ─── */}
         <aside className="edu-project">
           <img src={project2Image} alt="Project 2" className="project-image" />
           <h3>{t("education.title1")}</h3>
@@ -18,7 +19,9 @@ export default function Education() {
           <h5>{t("education.subtitle2")}</h5>
           <p>{t("education.body2")}</p>
         </aside>
-        <main className="edu-main">
+
+        {/* ─── Center Column: Image + Main Text ─── */}
+        <div className="edu-center-column">
           <div className="grad-image-wrapper">
             <img src={gradPhoto} alt="Graduation" className="grad-image" />
           </div>
@@ -26,7 +29,9 @@ export default function Education() {
             <p>{t("education.body3")}</p>
             <p>{t("education.body4")}</p>
           </div>
-        </main>
+        </div>
+
+        {/* ─── Right Sidebar ─── */}
         <aside className="edu-project">
           <h3>{t("education.title2")}</h3>
           <h5>{t("education.subtitle3")}</h5>
