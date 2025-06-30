@@ -13,12 +13,11 @@ export default function Education() {
         <aside className="edu-project">
           <img src={project2Image} alt="Project 2" className="project-image" />
           <h3>{t("education.title1")}</h3>
+          <h5>{t("education.subtitle1")}</h5>
           <p>{t("education.body1")}</p>
+          <h5>{t("education.subtitle2")}</h5>
           <p>{t("education.body2")}</p>
         </aside>
-        {/* Left: Project 1 */}
-
-        {/* Center: Graduation and Overview */}
         <main className="edu-main">
           <div className="grad-image-wrapper">
             <img src={gradPhoto} alt="Graduation" className="grad-image" />
@@ -30,13 +29,12 @@ export default function Education() {
         </main>
         <aside className="edu-project">
           <h3>{t("education.title2")}</h3>
+          <h5>{t("education.subtitle3")}</h5>
           <p>{t("education.body5")}</p>
           <img src={project1Image} alt="Project 1" className="project-image" />
-          <h3>{t("education.title3")}</h3>
+          <h5>{t("education.subtitle4")}</h5>
           <p>{t("education.body6")}</p>
         </aside>
-
-        {/* Right: Project 2 */}
       </div>
     </div>
   );

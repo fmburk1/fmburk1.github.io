@@ -20,7 +20,7 @@ export default function Profile({ setActiveSection }) {
         <aside className="profile-skills">
           {" "}
           <div className="skills-box">
-            <h3 className="skills-heading">Technical Skills</h3>
+            <h3 className="skills-heading">{t("profile.title1")}</h3>
 
             <ul className="skill-badges">
               {[
@@ -41,7 +41,7 @@ export default function Profile({ setActiveSection }) {
             </ul>
           </div>
           <div className="skills-box">
-            <h3 className="skills-heading">Interests</h3>
+            <h3 className="skills-heading">{t("profile.title2")}</h3>
 
             <ul className="skill-badges">
               {[
@@ -98,7 +98,7 @@ export default function Profile({ setActiveSection }) {
         </main>
         <aside className="profile-extras">
           <div className="skills-box">
-            <h3 className="skills-heading">Languages</h3>
+            <h3 className="skills-heading">{t("profile.title3")}</h3>
 
             <ul className="skill-badges">
               {[
@@ -112,7 +112,7 @@ export default function Profile({ setActiveSection }) {
               ))}
             </ul>
             <h3 className="skills-heading" style={{ marginTop: "1rem" }}>
-              Nationalities
+              {t("profile.title4")}
             </h3>
             <ul className="skill-badges">
               {[
@@ -127,17 +127,16 @@ export default function Profile({ setActiveSection }) {
             </ul>
           </div>
           <div className="skills-box">
-            <h3 className="skills-heading">Potentially Relevant Things</h3>
+            <h3 className="skills-heading">{t("profile.title5")}</h3>
 
             <ul className="skill-badges">
-              {[
-                "36 ACT Score (Perfect)",
-                "Pursuing CFA Level 1 Certification",
-              ].map((skill) => (
-                <li key={skill} className="skill-badge">
-                  {skill}
-                </li>
-              ))}
+              {[t("profile.interesting1"), t("profile.interesting2")].map(
+                (skill) => (
+                  <li key={skill} className="skill-badge">
+                    {skill}
+                  </li>
+                )
+              )}
             </ul>
           </div>
         </aside>

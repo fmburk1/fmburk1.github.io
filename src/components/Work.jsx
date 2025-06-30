@@ -11,6 +11,7 @@ import { Trans } from "react-i18next";
 import deloittepic from "../assets/deloittepic.jpg";
 import fmfvideo from "../assets/FMFVideo.mov";
 import zeugnis from "../assets/zeugnis.pdf";
+import porscheZeugnis from "../assets/LoR_MaxBurk_2022.pdf";
 
 export default function Work() {
   const { t } = useTranslation();
@@ -85,6 +86,7 @@ export default function Work() {
         t("work.example3"),
         t("work.example2"),
       ],
+      pdf: porscheZeugnis,
     },
   ];
 
