@@ -7,8 +7,8 @@ import Profile from "./components/Profile";
 import Home from "./components/Home";
 import i18n from "./i18n";
 import { useTranslation } from "react-i18next";
-import englishResume from "./assets/JuneResume.pdf";
-import germanResume from "./assets/JuniLebenslauf.pdf";
+import englishResume from "./assets/Resume.pdf";
+import germanResume from "./assets/Lebenslauf.pdf";
 
 function App() {
   const { t } = useTranslation();
