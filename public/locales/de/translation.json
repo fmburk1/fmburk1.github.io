@@ -7,7 +7,7 @@
     "home": "Home"
   },
   "home": {
-    "heading": "Hey, Ich bin Friedrich",
+    "heading": "Hey, ich bin Friedrich",
     "word1": "Data Scientist 📊🧠",
     "word2": "Sports Fan ⚽🏀",
     "word3": "Lebenslanger Lerner 📚🚀",
@@ -16,7 +16,7 @@
     "label": "Mehr über mich erfahren"
   },
   "profile": {
-    "body1": "Ich bin 23 Jahre alt, international aufgewachsen und habe Data Science an der University of California, Berkeley studiert. Berufliche Erfahrung habe ich in der Finanz- und Automobilbranche gesammelt. Besonders gerne nutze ich Datenanalysen, um fundierte und wirkungsvolle Entscheidungen zu unterstützen.",
+    "body1": "Ich bin 24 Jahre alt, international aufgewachsen und habe Data Science an der University of California, Berkeley studiert. Berufliche Erfahrung habe ich in der Finanz- und Automobilbranche gesammelt. Besonders gerne nutze ich Datenanalysen, um fundierte und wirkungsvolle Entscheidungen zu unterstützen.",
     "body2": "Ich habe in Tennessee, Kalifornien und Süddeutschland (Stuttgart & München) gelebt und bin dadurch offen, anpassungsfähig und kontaktfreudig geworden. Wenn du Lust hast, mich kennenzulernen, schreib mir gerne eine E-Mail oder kontaktiere mich über LinkedIn!",
     "title1": "Technische Stärken",
     "title2": "Interessen",
@@ -41,7 +41,7 @@
     "label4": "Aufgeschlossen",
     "label5": "VfB-Fan",
     "title5": "Sonstig Relevantes",
-    "interesting1": "36 ACT Ergebniss (Perfekt)",
+    "interesting1": "36 ACT Ergebnis (Perfekt)",
     "interesting2": "Strebe derzeit die CFA Level 1 Zertifizierung an"
   },
   "work": {
